@@ -65,7 +65,7 @@ public class PizzaController {
 
     @GetMapping
     public ResponseEntity<?> getAll(@RequestParam(required = false) String name,
-            @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
+            @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "15") int size) {
         return ResponseEntity.ok(this.pizzaApplication.findAll(name, page, size));
     }
 }

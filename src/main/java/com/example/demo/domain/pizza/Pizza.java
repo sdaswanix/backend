@@ -44,7 +44,7 @@ public class Pizza {
         for (Ingredient ingredient : this.ingredients) {
             total += ingredient.price;
         }
-        return total = total * 1.20;
+        return total = 5 + total * 1.20;
     }
 
     @ManyToMany
